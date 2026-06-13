@@ -1,0 +1,333 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/webicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <title>MY NOTES</title>
+</head>
+<body>
+    <div id="parent">
+        <div id="side">
+            <h1 id="head">My Notes</h1>
+            <div id="btn">
+                <button id="newNote">+ New Note</button>
+            </div>
+
+            <div class="menu">
+                <h3 class="sidebartxt">Menu</h3>
+                <button id="dash_btn" class="mnubtn"><img class="icon" src="assets/house.png"> DashBoard</button>
+                <button id="allnote_btn" class="mnubtn"><img class="icon" src="assets/notes.png"> All Notes</button>
+                <button id="fav_btn" class="mnubtn"><img class="icon" src="assets/star.png"> Favorites</button>
+            </div>
+
+            <div class="subj">
+                <h3  id="subtxt" class="sidebartxt">Subject</h3>
+                <div class="subj_names">
+                    
+                </div>
+                <button id="add_sub">+ Add Subject</button>
+            </div>
+        </div>
+        <div id="super_parent">
+            <div id="navbar">
+                    <div id="searchbar">
+                        <img id="searchicon" src="assets/search.png">
+                        <input  type="input" id="searchbox" placeholder="Search your notes...">
+                    </div>
+                    <div id="ngtmod">
+                        <button id="ngt_btn" class="nav_btn"><img id="ngt_img" class="nav_img" src="assets/moon.png" ></button>
+                        <button id="show_sidebar" class="nav_btn"><img class="nav_img" src="assets/menu.png"></button>
+                    </div>
+                </div>
+            <div id="dashbody">
+                <div id="wel_body">
+                    <h2 id="wel_head">DashBoard</h2>
+                    <h4 id="wel_sub">Welcome, Student!</h4>
+                    <p id="wel_para">Here's an overview of your notes.</p>
+                </div>
+                <div id="dash_list">
+                    <div id="block1" class="boxes">
+                        <div class="img_div">
+                            <img class="box_img" src="assets/note2.png">
+                        </div>
+                        <div id="content1" class="box_sty">
+                            <h3>Total Notes</h3>
+                            <h1 id="note_num">0</h1>
+                            <button id="view_allnote">View Notes</button>
+                        </div>
+                    </div>
+                    <div id="block2" class="boxes">
+                        <div class="img_div">   
+                            <img class="box_img" src="assets/star2.png">
+                        </div>
+                        <div id="content2" class="box_sty">
+                            <h3>Favorites</h3>
+                            <h1 id="fav_num">0</h1>
+                            <button id="view_favnote">View Favorites</button>
+                        </div>
+                    </div>
+                    <div id="block3" class="boxes">
+                        <div class="img_div">
+                            <img class="box_img" src="assets/book.png">
+                        </div>
+                        <div id="content3" class="box_sty">
+                            <h3>Subjects</h3>
+                            <h1 id="sub_num">0</h1>
+                            <button id="view_subjpop">View Subjects</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="lower_part">
+                    <div id="tab1">
+                        <div id="tab_txt">
+                            <h3>Resent Notes</h3>
+                        </div>
+                        <div id="tab_cont">
+                            
+                        </div>
+                    </div>
+                    <div id="tab2">
+                        <div id="tab_txt">
+                            <h3>Pinned Notes</h3>
+                        </div>
+                        <div id="tab2_cont">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="allnote_body">
+                <div id="allnote_txt">
+                    <h2 id="allnote_head">All Notes</h2>
+                    <p id="allnote_para">All your notes in one place.</p>
+                </div>
+                <div id="allnote_cont">
+                    <div id="data_txt">
+                        <h2>NOTE</h2>
+                        <h2>SUBJECT</h2>
+                        <h2>PRIORITY</h2>
+                        <h2>ACTION</h2>
+                    </div>
+                    <div id="allnote_list">
+
+                    </div>
+                </div>
+            </div>
+            <div id="fav_body">
+                <div id="allnote_txt">
+                    <h2 id="favnote_head">Favorites</h2>
+                    <p id="favnote_para">All your Favorite notes in one place.</p>
+                </div>
+                <div id="favnote_cont">
+                    <div id="favnote_list">
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="pop">
+        <div id="pop_main">
+            <div id="pop_cls">
+                <button id="cls_btn">X</button>
+            </div>
+            <div id="pop_img">
+                <img src="assets/noteicon.png">
+            </div>
+            <div id="pop_txt">
+                <h2>ADD SUBJECT</h2>
+                <h4>Enter Subject Name to add a new subject.</h4>
+            </div> 
+            <div id="pop_data">
+                <input id="pop_inp" type="text" name="sub_name" placeholder="Enter Subject Name">
+                <button id="save_subj">SAVE</button>
+            </div>
+        </div>
+    </div>
+    <div id="notepop_cont">
+        <div id="notepop">
+            <div id="abt_note">
+                <div id="img_note">
+                    <img src="assets/notes.png">
+                </div>
+                <div id="note_dtel">
+                    <h2>New Note</h2>
+                    <h4>Create a new note and organize your thoughts.</h4>
+                </div>
+                <div id="notepop_cls">
+                    <button id="cls_popnote">X</button>
+                </div>
+            </div>
+            <div id="notepop_main">
+                <div id="writ_sec">
+                    <div id="txt_edt">
+                        <div id="txt_btn_div"> 
+                            <button id="bold_btn"><img id="txt_img" src="assets/bold.png"></button>
+                            <button id="under_btn"><img id="txt_img" src="assets/underlined.png"></button>
+                            <button id="italic_btn"><img id="txt_img" src="assets/italic.png"></button>
+                            <div id="divider"></div>
+                            <button id="list_btn"><img id="txt_img" src="assets/list.png"></button>
+                            <button id="numlist_btn"><img id="txt_img" src="assets/number list.png"></button>
+                            <div id="divider"></div>
+                            <select id="font_size">
+                                <option value="5px">5px</option>
+                                <option value="10px">10px</option>
+                                <option value="12px">12px</option>
+                                <option selected value="14px">14px</option>
+                                <option value="16px">16px</option>
+                                <option value="18px">18px</option>
+                                <option value="20px">20px</option>
+                                <option value="22px">22px</option>
+                                <option value="24px">24px</option>
+                                <option value="26px">26px</option>
+                                <option value="28px">28px</option>
+                            </select>
+                            <div id="divider"></div>
+                            <button class="alignBtn" id="algleft_btn"><img id="txt_img" src="assets/aling-left.png"></button>
+                            <button class="alignBtn" id="algcen_btn"><img id="txt_img" src="assets/align-center.png"></button>
+                            <button class="alignBtn" id="algright_btn"><img id="txt_img" src="assets/aling-right.png"></button>
+                        </div>
+                    </div>
+                    <div id="writ_box">
+                        <div 
+                            id="editor" 
+                            contenteditable="true" 
+                            spellcheck="false">
+                            Write...
+                        </div>
+                    </div>
+                </div>
+                <div id="opt_sec">
+                    <div id="note_input">
+                        <h4>Note Name</h4>
+                        <input type="text" id="name_input" placeholder="Enter note name">
+                    </div>
+                    <div id="subj_sele">
+                        <h4>Choose Subject</h4>
+                        <select id="subj_data">
+                            
+                        </select>
+                    </div>
+                    <div id="color_input">
+                        <h4>Select Note Color</h4>
+                        <div id="note_color">
+                            <label class="color_option">
+                                <input type="radio" name="NoteColor" value="#a78bfa">
+                                <span class="color_circle purple"></span>
+                            </label>
+                            <label class="color_option">
+                                <input type="radio" name="NoteColor" value="#ec4899">
+                                <span class="color_circle pink"></span>
+                            </label>
+                            <label class="color_option">
+                                <input type="radio" name="NoteColor" value="#fca5a5">
+                                <span class="color_circle red"></span>
+                            </label>
+                            <label class="color_option">
+                                <input type="radio" name="NoteColor" value="#fcd34d">
+                                <span class="color_circle yellow"></span>
+                            </label>
+                            <label class="color_option">
+                                <input type="radio" name="NoteColor" value="#86efac">
+                                <span class="color_circle green"></span>
+                            </label>
+                            <label class="color_option">
+                                <input type="radio" name="NoteColor" value="#93c5fd">
+                                <span class="color_circle blue"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div id="pri_set">
+                        <h4>Priority</h4>
+                        <div id="pri_div">
+                            <label class="pri_opt">
+                                <input type="radio" name="priName" value="low">
+                                <span class="pri_box">LOW</span>
+                            </label>
+                            <label class="pri_opt">
+                                <input type="radio" name="priName" value="mid">
+                                <span class="pri_box">MIDIUM</span>
+                            </label>
+                            <label class="pri_opt">
+                                <input type="radio" name="priName" value="high">
+                                <span class="pri_box">HIGH</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div id="save_note">
+                        <button id="cle_note">
+                            CANCLE
+                        </button>
+                        <button id="create_note">
+                            CREATE NOTE
+                        </button>
+                    </div>
+                    <div id="decorate">
+                        <img src="assets/thesis.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="view_note">
+        <div id="view_cont">
+            <div id="abt_view">
+                <div id="viewimg_note">
+                    <img src="assets/notes.png">
+                </div>
+                <div id="view_dtel">
+                    <h2 id="note_name">New Note</h2>
+                    <h4>"Organize your ideas, simplify your life."</h4>
+                </div>
+                <div id="viewpop_cls">
+                    <button id="cls_viewnote">X</button>
+                </div>
+            </div>
+            <div id="view_main">
+                <div id="viewnote_info">
+                    <div class="detail" id="view_subj">
+                        <h3>Subject...</h3>
+                        <h4 id="note_subject"></h4>
+                    </div>
+                    <div class="detail" id="view_pri">
+                        <h3>Priority...</h3>
+                        <h4 id="note_pri"></h4>
+                    </div>
+                </div>
+                <div id="note_content">
+                    <div id="view_data">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="subj_all">
+        <div id="subj_cont">
+            <div id="subj_view">
+                <div id="subjimg_note">
+                    <img src="assets/notes.png">
+                </div>
+                <div id="subj_dtel">
+                    <h2>All Subjects</h2>
+                    <h4>"Organize your ideas, simplify your life."</h4>
+                </div>
+                <div id="subjpop_cls">
+                    <button id="cls_subjnote">X</button>
+                </div>
+            </div>
+            <div id="subj_main">
+                <div id="subj_list">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
