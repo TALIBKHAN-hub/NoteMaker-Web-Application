@@ -195,9 +195,9 @@ My Note Maker/
 
 # 📸 Screenshots
 
-## Home Page
+## About Page
 
-![Home Page](screenshots/home.png)
+![Home Page](screenshots/about.png)
 
 ## Dashboard
 
