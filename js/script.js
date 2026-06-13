@@ -222,6 +222,7 @@ showSub.addEventListener("click", () => {
     document.getElementById("pop_inp").value = "";
 
     renderSubjects();
+    location.reload();
     popSub.style.display = "none";
 })
 
