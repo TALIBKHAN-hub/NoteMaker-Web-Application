@@ -197,15 +197,33 @@ My Note Maker/
 
 ## About Page
 
-![Home Page](screenshots/about.png)
+![About Page](screenshots/AboutPage.png)
 
 ## Dashboard
 
 ![Dashboard](screenshots/dashboard.png)
 
-## Notes View
+## All Notes
 
-![Notes View](screenshots/notes.png)
+![Notes View](screenshots/allnotes.png)
+
+## Favourite Notes
+![Favourite](screenshots/favorites.png)
+
+## Add Subject
+![SubjectPop](screenshots/addsubjectpopup.png)
+
+## Create Notes
+![newnote](screenshots/newnote.png)
+
+## View Notes
+![viewnote](screenshots/viewnote.png)
+
+## View All Subjects
+![viewsubj](screenshots/viewsubject.png)
+
+## Dark Mode UI
+![dark](screenshots/darkmode.png)
 
 ---
 
