@@ -217,7 +217,7 @@ My Note Maker/
 ![newnote](screenshots/newnote.png)
 
 ## View Notes
-![viewnote](screenshots/viewnote.png)
+![viewnote](screenshots/viewnotes.png)
 
 ## View All Subjects
 ![viewsubj](screenshots/viewsubject.png)
